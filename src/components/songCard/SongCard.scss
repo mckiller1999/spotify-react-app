@@ -1,0 +1,14 @@
+.songCardBody {
+  width: 70%;
+  height: 50%;
+  background-color: #27354d;
+  border-radius: 30px;
+
+  //border-bottom-right-radius: 0px;
+  .containerSongCard {
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

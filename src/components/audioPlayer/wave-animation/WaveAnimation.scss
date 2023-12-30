@@ -1,0 +1,80 @@
+.waveAnimationMain {
+  justify-content: space-around;
+  height: 60px;
+  --boxSize: 12px;
+  --gutter: 16rem;
+  width: calc((var(--boxSize)+ var(--gutter)) * 13);
+  //width: 50%;
+  .box {
+    transform: scale(0.4);
+    height: 100%;
+    width: var(--boxSize);
+    background: linear-gradient(#4767d0, #4767d005);
+    border-radius: 18px;
+  }
+  .box.active {
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .box1 {
+    animation-name: quiet;
+  }
+  .box2 {
+    animation-name: normal;
+  }
+  .box3 {
+    animation-name: quiet;
+  }
+  .box4 {
+    animation-name: loud;
+  }
+  .box5 {
+    animation-name: quiet;
+  }
+  .box6 {
+    animation-name: quiet;
+  }
+  .box1 {
+    animation-name: normal;
+  }
+  .box7 {
+    animation-name: quiet;
+  }
+}
+
+@keyframes quiet {
+  25% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(0.1);
+  }
+  75% {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes normal {
+  25% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(0.1);
+  }
+  75% {
+    transform: scale(0.2);
+  }
+}
+
+@keyframes loud {
+  25% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(0.1);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+}

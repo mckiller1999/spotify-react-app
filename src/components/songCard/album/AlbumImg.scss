@@ -1,0 +1,19 @@
+.albumImg {
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  img {
+    border-radius: 30px;
+    width: 100%;
+  }
+  .albumImgShadow {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    width: 90%;
+    position: absolute;
+    z-index: -1;
+    top: 30px;
+  }
+}
